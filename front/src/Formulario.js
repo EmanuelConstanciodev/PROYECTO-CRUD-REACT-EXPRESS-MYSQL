@@ -139,14 +139,14 @@ const Formulario = () => {
         materiales.map((a) => {
           return (
             <>
-              <h3>Nombre y apellido</h3>
+              <h3>Herramienta:</h3>
               <p>
-                {a.nombre} {a.apellido}
+                { a.herramienta }
               </p>
-              <h3>Nacionalidad</h3>
-              <p>{a.pais} </p>
+              <h3> Precio: </h3>
+              <p>{ a.precio }</p>
               <h3>Foto</h3>
-              <img src={a.foto} alt={a.nombre} /> <br />
+              <img src={a.foto} alt={a.herramienta} /> <br />
               <button
                 style={{ background: "yellow", color: "black" }}
                 onClick={() => handleObtieneRegistro(a.id)}
